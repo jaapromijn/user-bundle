@@ -162,3 +162,11 @@ security:
 ## Extend User entity
 
 If you want to extend the User entity, you should clone [User](https://github.com/ConnectHolland/user-bundle/blob/master/src/Entity/User.php) and add it as entity in your own project.
+Configure your own entity as user_class:
+
+```yaml
+# config/packages/connectholland_user.yaml
+
+connectholland_user:
+    user_class: ConnectHolland\YourProjectNamespace\Entity\User
+```
