@@ -21,9 +21,6 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
-/**
- * @codeCoverageIgnore WIP
- */
 final class OAuthUserProvider implements OAuthAwareUserProviderInterface
 {
     /**

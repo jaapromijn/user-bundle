@@ -13,9 +13,6 @@ use ConnectHolland\UserBundle\Event\UserCreatedEventInterface;
 use ConnectHolland\UserBundle\Mailer\RegistrationEmail;
 use ConnectHolland\UserBundle\UserBundleEvents;
 
-/**
- * @codeCoverageIgnore WIP
- */
 final class UserCreatedSubscriber implements UserCreatedSubscriberInterface
 {
     /**
@@ -37,9 +34,9 @@ final class UserCreatedSubscriber implements UserCreatedSubscriberInterface
     }
 
     /**
-     * @codeCoverageIgnore No need to test this array 'config' method
+     * @return array<string, string>
      */
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return [
             UserBundleEvents::USER_CREATED => 'onUserCreated',

@@ -16,9 +16,6 @@ use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-/**
- * @codeCoverageIgnore There is something not working with the RepeatedType config
- */
 class NewPasswordType extends AbstractType
 {
     /**

@@ -13,9 +13,6 @@ use League\HTMLToMarkdown\HtmlConverter;
 use Symfony\Component\DomCrawler\Crawler;
 use Twig\Environment;
 
-/**
- * @codeCoverageIgnore WIP
- */
 final class Mailer implements MailerInterface
 {
     /**

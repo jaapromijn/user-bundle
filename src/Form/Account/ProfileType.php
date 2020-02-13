@@ -14,9 +14,6 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-/**
- * @codeCoverageIgnore Contains no functionality as there is no buildForm, only configure methods are used.
- */
 class ProfileType extends AbstractType
 {
     /**

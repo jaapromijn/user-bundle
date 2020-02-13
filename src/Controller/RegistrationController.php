@@ -31,9 +31,6 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\RouterInterface;
 use Twig\Environment;
 
-/**
- * @codeCoverageIgnore WIP
- */
 final class RegistrationController
 {
     /**

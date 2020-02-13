@@ -33,9 +33,6 @@ use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Twig\Environment;
 
-/**
- * @codeCoverageIgnore WIP
- */
 final class ResetController
 {
     private const PASSWORD_REQUEST_ACTION = 'reset';

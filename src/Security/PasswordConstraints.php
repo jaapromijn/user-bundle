@@ -14,9 +14,6 @@ use Rollerworks\Component\PasswordStrength\Validator\Constraints\PasswordStrengt
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 
-/**
- * @codeCoverageIgnore Just build up an array of constraints.
- */
 class PasswordConstraints
 {
     /**

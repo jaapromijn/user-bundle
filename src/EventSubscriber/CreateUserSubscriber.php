@@ -16,9 +16,6 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
-/**
- * @codeCoverageIgnore WIP
- */
 final class CreateUserSubscriber implements CreateUserSubscriberInterface
 {
     /**

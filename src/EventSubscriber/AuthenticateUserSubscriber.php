@@ -44,9 +44,9 @@ final class AuthenticateUserSubscriber implements AuthenticateUserSubscriberInte
     }
 
     /**
-     * @codeCoverageIgnore No need to test this array 'config' method
+     * @return array<string, string>
      */
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return [
             UserBundleEvents::AUTHENTICATE_USER => 'onAuthenticateUser',

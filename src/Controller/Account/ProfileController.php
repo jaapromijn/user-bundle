@@ -21,7 +21,6 @@ use Symfony\Component\Routing\Annotation\Route;
 use Twig\Environment;
 
 /**
- * @codeCoverageIgnore WIP
  * @Route({"en": "/account", "nl": "/account"}, name="connectholland_user_account")
  */
 final class ProfileController

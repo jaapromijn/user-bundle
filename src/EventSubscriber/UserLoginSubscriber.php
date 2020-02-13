@@ -16,9 +16,6 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
 use Symfony\Component\Security\Http\Event\InteractiveLoginEvent;
 use Symfony\Component\Security\Http\SecurityEvents;
 
-/**
- * @codeCoverageIgnore WIP
- */
 final class UserLoginSubscriber implements UserLoginSubscriberInterface
 {
     /**
@@ -44,7 +41,7 @@ final class UserLoginSubscriber implements UserLoginSubscriberInterface
     }
 
     /**
-     * @codeCoverageIgnore No need to test this array 'config' method
+     * @return array<string, string>
      */
     public static function getSubscribedEvents()
     {

@@ -16,9 +16,6 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Twig\Environment;
 
-/**
- * @codeCoverageIgnore WIP
- */
 final class SecurityController
 {
     /**

@@ -19,9 +19,6 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\Validator\Constraints\NotBlank;
 
-/**
- * @codeCoverageIgnore WIP
- */
 final class RegistrationType extends AbstractType
 {
     /**

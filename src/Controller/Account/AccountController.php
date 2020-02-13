@@ -24,7 +24,6 @@ use Symfony\Component\Security\Core\User\UserInterface;
 use Twig\Environment;
 
 /**
- * @codeCoverageIgnore WIP
  * @Route({"en": "/account", "nl": "/account"}, name="connectholland_user_account")
  */
 final class AccountController

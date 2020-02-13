@@ -24,9 +24,9 @@ final class CreateOAuthUserSubscriber implements CreateOAuthUserSubscriberInterf
     }
 
     /**
-     * @codeCoverageIgnore No need to test this array 'config' method
+     * @return array<string, string>
      */
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return [
             UserBundleEvents::CREATE_OAUTH_USER => 'onCreateOAuthUser',

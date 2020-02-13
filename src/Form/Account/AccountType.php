@@ -20,9 +20,6 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\NotBlank;
 
-/**
- * @codeCoverageIgnore Contains no functionality as there is no buildForm, only configure methods are used.
- */
 class AccountType extends AbstractType
 {
     /**

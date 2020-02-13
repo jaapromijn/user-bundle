@@ -45,7 +45,7 @@ final class UserResetSubscriber implements UserResetSubscriberInterface
     }
 
     /**
-     * @codeCoverageIgnore No need to test this array 'config' method
+     * @return array<string, string>
      */
     public static function getSubscribedEvents(): array
     {

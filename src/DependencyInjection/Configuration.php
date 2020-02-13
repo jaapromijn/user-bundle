@@ -14,9 +14,6 @@ use ConnectHolland\UserBundle\Entity\UserInterface;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
-/**
- * @codeCoverageIgnore WIP
- */
 final class Configuration implements ConfigurationInterface
 {
     public const CONFIG_ROOT_KEY = 'connectholland_user';

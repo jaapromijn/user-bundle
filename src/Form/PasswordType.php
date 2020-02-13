@@ -14,9 +14,6 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType as BasePasswordType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-/**
- * @codeCoverageIgnore Contains no functionality as there is no buildForm, only configure methods are used.
- */
 class PasswordType extends AbstractType
 {
     /**
