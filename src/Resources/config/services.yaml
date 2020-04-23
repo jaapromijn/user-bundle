@@ -38,6 +38,8 @@ services:
         arguments:
             - '@router'
             - '@Symfony\Component\HttpKernel\UriSigner'
+            - '@GisoStallenberg\Bundle\ResponseContentNegotiationBundle\Negotiation\FormatNegotiator'
+            - '@request_stack'
 
     ConnectHolland\UserBundle\Mailer\DeleteEmail:
 
