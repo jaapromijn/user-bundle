@@ -13,6 +13,7 @@ use ConnectHolland\UserBundle\Entity\UserInterface;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 use Doctrine\ORM\Query\Expr;
+use Symfony\Bridge\Doctrine\Security\User\UserLoaderInterface;
 
 /**
  * @method User|null find($id, $lockMode = null, $lockVersion = null)
@@ -22,7 +23,7 @@ use Doctrine\ORM\Query\Expr;
  *
  * @codeCoverageIgnore WIP
  */
-final class UserRepository extends ServiceEntityRepository implements UserRepositoryInterface
+final class UserRepository extends ServiceEntityRepository implements UserRepositoryInterface, UserLoaderInterface
 {
     public function __construct(ManagerRegistry $registry, string $class)
     {
@@ -45,6 +46,19 @@ final class UserRepository extends ServiceEntityRepository implements UserReposi
             ->andWhere('oauths.resource = :resource')
             ->setParameter('resource', $resource)
             ->setParameter('oauthUsername', $oauthUsername)
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function loadUserByUsername($username)
+    {
+        return $this->createQueryBuilder('user')
+            ->where('user.enabled = 1')
+            ->andWhere('(user.email = :username OR user.username = :username)')
+            ->setParameter('username', $username)
             ->getQuery()
             ->getOneOrNullResult();
     }
